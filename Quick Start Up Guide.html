@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get It Done! To-Do List: Quick Start Guide</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Changed to a standard sans-serif font */
+            background-color: #f0f0f0; /* Lighter, neutral background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        .todo-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #FFFFFF; /* Pure white background for the content area */
+            border: 1px solid #e0e0e0; /* Subtle light grey border */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            position: relative;
+            overflow: hidden;
+            padding: 30px 40px; /* Simplified padding, removed extra left padding */
+            /* Removed all background-image, background-size, background-position, background-repeat properties */
+        }
+
+        .todo-container::before {
+            /* Removed the red margin line pseudo-element */
+            content: none; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px; /* Adjusted margin */
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+            font-family: 'Open Sans', sans-serif; /* Changed to Open Sans for headings */
+            font-size: 2em;
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-family: 'Open Sans', sans-serif; /* Changed to Open Sans */
+            font-size: 1.4em;
+            border-bottom: 1px solid #eee; /* Lighter border */
+            padding-bottom: 5px;
+            margin-top: 25px; /* Adjusted margin */
+            margin-bottom: 10px; /* Adjusted margin */
+            line-height: 1.3;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-family: 'Open Sans', sans-serif; /* Changed to Open Sans */
+            font-size: 1.2em;
+            margin-top: 20px; /* Adjusted margin */
+            margin-bottom: 10px; /* Adjusted margin */
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6; /* Standard line height for better readability */
+            margin-top: 0;
+            margin-bottom: 15px; /* Standard margin */
+        }
+        
+        li {
+            font-size: 16px;
+            line-height: 1.6; /* Standard line height */
+            margin-bottom: 5px; /* Small margin for list items */
+        }
+
+        ol, ul {
+            margin-left: 20px; /* Standard indentation */
+            padding-left: 0;
+            margin-bottom: 15px; /* Standard margin */
+        }
+
+        ol ol, ul ul, ol ul, ul ol {
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: #34495e;
+        }
+
+        .note {
+            background-color: #e9f7ff; /* Lighter blue background for notes */
+            padding: 10px 15px;
+            border-left: 5px solid #3498db;
+            margin-top: 20px; /* Adjusted margin */
+            margin-bottom: 20px; /* Adjusted margin */
+            line-height: 1.6;
+        }
+
+        .icon {
+            vertical-align: middle;
+            font-size: 1.2em;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Get It Done! To-Do List: Quick Start Guide 🚀</h1>
+		
+        <p>This guide provides an overview of how to use the "Get It Done! To-Do List" application.</p>
+
+        <h2>1. Application Overview</h2>
+        <p>The "Get It Done! To-Do List" is a simple web-based application to help you manage your tasks. It offers:</p>
+        <ul>
+            <li><strong>Task Management:</strong> Easily add, edit, and delete your tasks.</li>
+            <li><strong>Completion Tracking:</strong> Mark tasks as complete or incomplete with a click.</li>
+            <li><strong>Persistence:</strong> Your tasks are automatically saved in your browser's local storage.</li>
+            <li><strong>Clean Design:</strong> A streamlined visual design for easy readability.</li>
+        </ul>
+
+        <h2>2. Accessing the Application</h2>
+        <p>To get started, simply:</p>
+        <ul>
+            <li><strong>Locate the File:</strong> Find the `Get It Done! To Do List.html` file.</li>
+            <li><strong>Open in Browser:</strong> Double-click the file, or right-click and choose "Open with" your favorite web browser (e.g., Chrome, Firefox, Edge).</li>
+        </ul>
+
+        <h2>3. Key Features and How to Use Them</h2>
+
+        <h3>3.1 Adding a New Task</h3>
+        <ol>
+            <li><strong>Type in the Input Field:</strong> In the input box at the top, type your task (e.g., "Send email to John", "Prepare presentation slides").</li>
+            <li><strong>Press Enter:</strong> Once you've typed your task, press the **Enter** key. Your task will appear in the list below.</li>
+        </ol>
+
+        <h3>3.2 Marking a Task as Complete/Incomplete</h3>
+        <ol>
+            <li><strong>Locate the Checkbox:</strong> Each task has a checkbox on its left.</li>
+            <li><strong>Click the Checkbox:</strong>
+                <ul>
+                    <li>To mark a task as **complete**, click the checkbox. The task text will be struck through and change color.</li>
+                    <li>To mark a task as **incomplete**, click the checkbox again. The strikethrough will be removed.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>3.3 Editing a Task</h3>
+        <ol>
+            <li><strong>Locate the Edit Button:</strong> Each task has a pencil icon <span class="icon">📝</span> on its right.</li>
+            <li><strong>Click the Edit Button:</strong> Click the pencil icon next to the task you want to edit.</li>
+            <li><strong>Enter New Text:</strong> A prompt will appear. Type your new task text into the prompt and click "OK" or press Enter.</li>
+        </ol>
+
+        <h3>3.4 Deleting a Task</h3>
+        <ol>
+            <li><strong>Locate the Delete Button:</strong> Each task has a trash can icon <span class="icon">🗑️</span> on its right.</li>
+            <li><strong>Click the Delete Button:</strong> Click the trash can icon next to the task you want to delete.</li>
+            <li><strong>Confirm Deletion:</strong> A confirmation dialog will appear. Click "**OK**" to delete the task, or "Cancel" to keep it.</li>
+        </ol>
+
+        <h2>4. Data Storage (Local Storage)</h2>
+        <p>Your tasks are automatically saved in your web browser's **local storage**. This means if you close the browser tab or window and reopen the HTML file, your tasks will still be there.</p>
+        <div class="note">
+            **Important:** Local storage is specific to your browser and computer. Tasks saved on one computer or in one browser will **not** automatically sync to another.
+        </div>
+
+        <h2>5. Basic Troubleshooting</h2>
+        <ul>
+            <li>**Tasks not appearing/saving?** Ensure JavaScript is enabled in your browser. This application relies on JavaScript to function.</li>
+            <li>**Page looks strange?** Make sure the `Get It Done! To Do List CSS.css` file is in the same directory as the HTML file and hasn't been modified.</li>
+            <li>**Buttons not working?** Check that the `Pencil.png` and `Trash.png` image files are in the same directory as the HTML file.</li>
+        </ul>
+
+        <h2>6. Notes for Users</h2>
+        <ul>
+            <li>**Independent Instances:** Each user will have their own independent "Get It Done! To-Do List." Tasks created by one user will **not** be visible to others.</li>
+            <li>**Browser-Specific Data:** Each user tasks are tied to the specific browser you are using. If you switch browsers or computers, your tasks won't carry over.</li>
+            <li>**Practice Focus:** Feel free to add, edit, and delete various tasks to get comfortable with the application's functionality!</li>
+        </ul>
+    </div>
+</body>
+</html>
