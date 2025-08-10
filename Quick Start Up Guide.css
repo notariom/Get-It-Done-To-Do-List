@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the font family for the entire body */
+    background-color: #C7D4C5; /* Sets a light, neutral background color */
+    display: flex; /* Enables flexbox layout for direct children */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items to the start vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    margin: 0; /* Removes default body margin */
+    padding: 20px; /* Adds padding around the body content */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    color: #333; /* Sets the default text color */
+}
+
+.todo-container {
+    width: 90%; /* Sets the width of the container */
+    max-width: 800px; /* Sets the maximum width of the container */
+    background-color: #FFFFFF; /* Sets a pure white background for the container */
+    border: 1px solid #e0e0e0; /* Adds a subtle light grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a soft shadow effect */
+    position: relative; /* Sets positioning context for child elements */
+    overflow: hidden; /* Hides content that overflows the container */
+    padding: 30px 40px; /* Adds padding inside the container */
+}
+
+.todo-container::before {
+    content: none; /* Removes the pseudo-element that was previously used for a red margin line */
+}
+
+h1 {
+    text-align: center; /* Centers the text of the main heading */
+    color: #333; /* Sets the color of the main heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+    margin-top: 0; /* Removes top margin */
+    position: relative; /* Sets positioning context */
+    z-index: 1; /* Ensures the heading is above other elements if applicable */
+    font-family: 'Open Sans', sans-serif; /* Sets the font family for the heading */
+    font-size: 2em; /* Sets the font size relative to the parent font size */
+    line-height: 1.2; /* Sets the line height for better readability */
+}
+
+h2 {
+    color: #2c3e50; /* Sets the color of the second-level headings */
+    font-family: 'Open Sans', sans-serif; /* Sets the font family for the headings */
+    font-size: 1.4em; /* Sets the font size */
+    border-bottom: 1px solid #eee; /* Adds a light bottom border */
+    padding-bottom: 5px; /* Adds padding below the text and above the border */
+    margin-top: 25px; /* Adds space above the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+    line-height: 1.3; /* Sets the line height */
+}
+
+h3 {
+    color: #2c3e50; /* Sets the color of the third-level headings */
+    font-family: 'Open Sans', sans-serif; /* Sets the font family for the headings */
+    font-size: 1.2em; /* Sets the font size */
+    margin-top: 20px; /* Adds space above the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+    line-height: 1.4; /* Sets the line height */
+}
+
+p {
+    font-size: 16px; /* Sets the font size for paragraphs */
+    line-height: 1.6; /* Sets the line height for better readability */
+    margin-top: 0; /* Removes top margin */
+    margin-bottom: 15px; /* Adds space below paragraphs */
+}
+
+li {
+    font-size: 16px; /* Sets the font size for list items */
+    line-height: 1.6; /* Sets the line height for list items */
+    margin-bottom: 5px; /* Adds a small margin below list items */
+}
+
+ol, ul {
+    margin-left: 20px; /* Adds left margin for indentation */
+    padding-left: 0; /* Removes default left padding */
+    margin-bottom: 15px; /* Adds space below lists */
+}
+
+ol ol, ul ul, ol ul, ul ol {
+    margin-left: 20px; /* Adds additional left margin for nested lists */
+    margin-bottom: 0; /* Removes bottom margin for nested lists */
+}
+
+strong {
+    color: #34495e; /* Sets the color for strong (bold) text */
+}
+
+.note {
+    background-color: #e9f7ff; /* Sets a lighter blue background for note sections */
+    padding: 10px 15px; /* Adds padding inside the note section */
+    border-left: 5px solid #3498db; /* Adds a solid blue left border to the note section */
+    margin-top: 20px; /* Adds space above the note section */
+    margin-bottom: 20px; /* Adds space below the note section */
+    line-height: 1.6; /* Sets the line height for text within the note */
+}
+
+.icon {
+    vertical-align: middle; /* Aligns icons vertically with text */
+    font-size: 1.2em; /* Sets the font size for icons */
+}

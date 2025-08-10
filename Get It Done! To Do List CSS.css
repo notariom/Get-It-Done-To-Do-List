@@ -1,7 +1,7 @@
 /* General body and container styling */
 body {
     font-family: 'Courier New', Courier, monospace; /* Sets the font for the entire body*/
-    background-color: #C7B79D;/* Darker background for web page */
+    background-color: #C7D4C5;/* light green for web page */
     display: flex;/* Uses flexbox for layout */
     justify-content: center;/* Centers content horizontally */
     align-items: center;/* Centers content vertically */

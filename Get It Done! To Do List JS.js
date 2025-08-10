@@ -1,7 +1,7 @@
 //
 // Maria Notario
-// CSC 489
-// 08/05/2025
+// CSC 489 Project
+// 08/09/2025
 // 
 // Get It Done! To Do List JS.js
 //Ensures the DOM is fully loaded before executing the script
