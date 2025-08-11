@@ -20,7 +20,29 @@ body {
     padding-top: 50px; /* Extra padding at the top for the first horizontal line */
     overflow: hidden; /* Hides content that overflows, important for lines */
 }
+/* Styles for the top-right help link */
+.top-right-help {
+    position: absolute; /* Position relative to .todo-container */
+    top: 15px; /* Distance from the top of the container */
+    right: 30px; /* Distance from the right of the container */
+    z-index: 2; /* Ensure it's above other content */
+}
 
+.top-right-help a {
+    color: #006400; /* Dark green color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9em; /* Slightly smaller font size */
+    font-family: 'Courier New', Courier, monospace; /* Maintain font consistency */
+    padding: 5px; /* Add some padding for visual spacing */
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for contrast */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.top-right-help a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #004d00; /* Slightly darker green on hover */
+    background-color: rgba(255, 255, 255, 0.9); /* Less transparent on hover */
+}
 
 /* Lined paper effect - Vertical red line */
 .todo-container::before {
