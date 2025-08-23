@@ -1,0 +1,147 @@
+/*
+ * Maria Notario
+ * CSC 489 Final Project
+ * Summer 2025
+ * Get It Done! To-Do List
+ * Quick Start Up Guide.css
+ */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font to Arial or any generic sans-serif font */
+    background-color: #C7D4C5; /* Sets the background color of the page to a light green */
+    display: flex; /* Establishes a flex container for the body, allowing flexible box layout */
+    justify-content: center; /* Centers content horizontally within the flex container */
+    align-items: flex-start; /* Aligns content to the start (top) of the cross-axis (vertically) */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    margin: 0; /* Removes default body margin */
+    padding: 20px; /* Adds padding around the content within the body */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    color: #333; /* Sets the default text color to a dark gray */
+}
+
+/* Container for the main content of the To-Do List guide */
+.todo-container {
+    width: 90%; /* Sets the width of the container to 90% of its parent */
+    max-width: 800px; /* Limits the maximum width of the container to 800px */
+    background-color: #F5F5DC; /* Sets the background color of the content area to light beige */
+    border: 1px solid #e0e0e0; /* Adds a subtle light gray border around the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a soft shadow effect to the container */
+    position: relative; /* Sets the positioning context for absolutely positioned children */
+    overflow: hidden; /* Clips content that overflows the container's padding box */
+    padding: 30px 40px; /* Sets padding for the top/bottom and left/right sides of the container */
+    /* Removed all background-image, background-size, background-position, background-repeat properties as they were not present in the original structure */
+}
+
+/* Pseudo-element for the red margin line was removed */
+.todo-container::before {
+    content: none; /* Removes the pseudo-element content, effectively disabling it */
+}
+
+/* Styles for the top-right "Get It Done! To Do List" link */
+.top-right-help {
+    position: absolute; /* Positions the element absolutely within its nearest positioned ancestor (.todo-container) */
+    top: 15px; /* Sets the distance from the top edge of the positioned ancestor */
+    right: 30px; /* Sets the distance from the right edge of the positioned ancestor */
+    z-index: 2; /* Ensures the element is stacked above other content */
+}
+
+.top-right-help a {
+    color: #006400; /* Sets the link text color to dark green */
+    text-decoration: none; /* Removes the underline from the link text */
+    font-size: 0.9em; /* Sets the font size slightly smaller than the parent element */
+    font-family: 'Courier New', Courier, monospace; /* Maintains a consistent monospace font for the link */
+    padding: 5px; /* Adds padding around the link text */
+    background-color: rgba(255, 255, 255, 0.7); /* Sets a slightly transparent white background for contrast */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+
+.top-right-help a:hover {
+    text-decoration: underline; /* Adds an underline to the link text on hover */
+    color: #004d00; /* Changes the link text color to a slightly darker green on hover */
+    background-color: rgba(255, 255, 255, 0.9); /* Makes the background less transparent on hover */
+}
+
+/* Styling for main heading */
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    color: #333; /* Sets the heading text color to dark gray */
+    margin-bottom: 20px; /* Sets the bottom margin for the heading */
+    margin-top: 0; /* Removes the top margin for the heading */
+    position: relative; /* Sets the positioning context for potential children */
+    z-index: 1; /* Sets the stacking order for the heading */
+    font-family: 'Open Sans', sans-serif; /* Sets the font for the heading to Open Sans or a generic sans-serif font */
+    font-size: 2em; /* Sets the font size to twice the size of the parent element's font */
+    line-height: 1.2; /* Sets the line height for better readability */
+}
+
+/* Styling for sub-headings */
+h2 {
+    color: #2c3e50; /* Sets the sub-heading text color to a dark blue-gray */
+    font-family: 'Open Sans', sans-serif; /* Sets the font for the sub-heading to Open Sans or a generic sans-serif font */
+    font-size: 1.4em; /* Sets the font size larger than the parent element's font */
+    border-bottom: 1px solid #eee; /* Adds a light gray border at the bottom of the sub-heading */
+    padding-bottom: 5px; /* Adds padding below the text and above the bottom border */
+    margin-top: 25px; /* Sets the top margin for the sub-heading */
+    margin-bottom: 10px; /* Sets the bottom margin for the sub-heading */
+    line-height: 1.3; /* Sets the line height for better readability */
+}
+
+/* Styling for smaller headings/sub-sub-headings */
+h3 {
+    color: #2c3e50; /* Sets the smaller heading text color to a dark blue-gray */
+    font-family: 'Open Sans', sans-serif; /* Sets the font for the smaller heading to Open Sans or a generic sans-serif font */
+    font-size: 1.2em; /* Sets the font size slightly larger than the parent element's font */
+    margin-top: 20px; /* Sets the top margin for the smaller heading */
+    margin-bottom: 10px; /* Sets the bottom margin for the smaller heading */
+    line-height: 1.4; /* Sets the line height for better readability */
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 16px; /* Sets the font size for paragraphs to 16 pixels */
+    line-height: 1.6; /* Sets the line height for better readability */
+    margin-top: 0; /* Removes the top margin for paragraphs */
+    margin-bottom: 15px; /* Sets the bottom margin for paragraphs */
+}
+
+/* Styling for list items */
+li {
+    font-size: 16px; /* Sets the font size for list items to 16 pixels */
+    line-height: 1.6; /* Sets the line height for better readability */
+    margin-bottom: 5px; /* Sets a small bottom margin for list items */
+}
+
+/* Styling for ordered and unordered lists */
+ol, ul {
+    margin-left: 20px; /* Indents the lists from the left */
+    padding-left: 0; /* Removes default left padding (indentation will come from margin-left) */
+    margin-bottom: 15px; /* Sets the bottom margin for lists */
+}
+
+/* Styling for nested lists */
+ol ol, ul ul, ol ul, ul ol {
+    margin-left: 20px; /* Adds further indentation for nested lists */
+    margin-bottom: 0; /* Removes bottom margin for nested lists to prevent excessive spacing */
+}
+
+/* Styling for strong/bold text */
+strong {
+    color: #34495e; /* Sets the color of strong/bold text to a darker blue-gray */
+}
+
+/* Styling for special "note" sections */
+.note {
+    background-color: #e9f7ff; /* Sets a lighter blue background for note sections */
+    padding: 10px 15px; /* Adds padding inside the note section */
+    border-left: 5px solid #3498db; /* Adds a solid blue left border to the note section */
+    margin-top: 20px; /* Sets the top margin for note sections */
+    margin-bottom: 20px; /* Sets the bottom margin for note sections */
+    line-height: 1.6; /* Sets the line height for better readability within note sections */
+}
+
+/* Styling for inline icons */
+.icon {
+    vertical-align: middle; /* Aligns the icon vertically with the middle of the text */
+    font-size: 1.2em; /* Sets the font size of the icon slightly larger than the surrounding text */
+}
